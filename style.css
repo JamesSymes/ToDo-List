@@ -1,0 +1,73 @@
+/* Styles for the entire body of the page */
+body {
+  font-family: Arial, sans-serif;  /* Sets the font for the page */
+  display: flex;                   /* Aligns elements like text */
+  justify-content: center;         /* Centers content horizontally */
+  align-items: center;             /* Centers content vertically */
+  height: 100vh;                   /* Sets the height to 100% of the viewport height */
+  background-color: #f2f2f2;       /* Sets the background color of the body */
+}
+
+/* Styles for the main todo app container */
+#todoApp {
+  width: 300px;                   /* Sets the width of the todo app container */
+  margin: 0 auto;                 /* Centers the todo app container horizontally */
+  background-color: #fff;         /* Sets the background color of the container */
+  padding: 20px;                  /* Sets space around the content in the container */
+  border-radius: 10px;            /* Makes the corners of the container rounded */
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);  /* Gives a shadow effect to the container */
+}
+
+/* Styles for the task input field */
+#taskInput {
+  width: 100%;                    /* Sets the width of the input field */
+  padding: 10px;                  /* Sets space around the text in the input field */
+  margin-bottom: 10px;            /* Sets space below the input field */
+  box-sizing: border-box;         /* Makes sure padding does not affect the final size of the input field */
+  border: 1px solid #ddd;         /* Sets the border style for the input field */
+  border-radius: 5px;             /* Makes the corners of the input field rounded */
+}
+
+/* Styles for the add task button */
+#addTaskButton {
+  padding: 10px;                  /* Sets space around the text on the button */
+  width: 100%;                    /* Sets the width of the button */
+  background-color: #007BFF;      /* Sets the background color of the button */
+  color: white;                   /* Sets the color of the text on the button */
+  border: none;                   /* Removes the border from the button */
+  border-radius: 5px;             /* Makes the corners of the button rounded */
+  cursor: pointer;                /* Changes the mouse cursor when it's over the button */
+}
+
+/* Styles for the hover state of the add task button */
+#addTaskButton:hover {
+  background-color: #0056b3;      /* Changes the background color of the button when the mouse hovers over it */
+}
+
+/* Styles for the task list container */
+#taskList {
+  margin-top: 20px;               /* Sets space above the task list */
+}
+
+/* Styles for each list item in the task list */
+#taskList li {
+  list-style: none;               /* Removes the default bullet points from the list items */
+  background-color: #f9f9f9;      /* Sets the background color for the list items */
+  margin-bottom: 10px;            /* Sets space below each list item */
+  padding: 10px;                  /* Sets space around the content in each list item */
+  border-radius: 5px;             /* Makes the corners of the list items rounded */
+  position: relative;             /* Sets the position context for absolute positioned children */
+}
+
+/* Styles for the delete button in each list item */
+#taskList li button {
+  position: absolute;          /* Positions the button relative to the list item it's within */
+  right: 10px;                 /* Positions the button 10px from the right edge of the list item */
+  top: 50%;                    /* Positions the top edge of the button at the middle of the list item */
+  transform: translateY(-50%); /* Shifts the button upwards by half its height to center it vertically */
+  background: none;            /* Removes the default button background */
+  border: none;                /* Removes the default button border */
+  color: red;                  /* Sets the button text color to red */
+  cursor: pointer;             /* Changes the mouse cursor when it's over the button */
+}
+
